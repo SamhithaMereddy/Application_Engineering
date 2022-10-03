@@ -34,7 +34,6 @@ public class CreateJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         phonejText = new javax.swing.JTextField();
-        photojLabel = new javax.swing.JLabel();
         genderjText = new javax.swing.JTextField();
         namejText = new javax.swing.JTextField();
         idjText = new javax.swing.JTextField();
@@ -57,8 +56,6 @@ public class CreateJPanel extends javax.swing.JPanel {
         phonejLabel = new javax.swing.JLabel();
         emailjLabel = new javax.swing.JLabel();
         SavejButton = new javax.swing.JButton();
-
-        photojLabel.setText("Photo:");
 
         namejText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,10 +142,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(72, 72, 72)
                                         .addComponent(emailjLabel))))
-                            .addComponent(titlejLabel)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(photojLabel)))
+                            .addComponent(titlejLabel))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(SavejButton)
@@ -212,11 +206,9 @@ public class CreateJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(emailjLabel)
                     .addComponent(emailjText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(photojLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                .addGap(36, 36, 36)
                 .addComponent(SavejButton)
-                .addGap(160, 160, 160))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -297,7 +289,6 @@ public class CreateJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField namejText;
     private javax.swing.JLabel phonejLabel;
     private javax.swing.JTextField phonejText;
-    private javax.swing.JLabel photojLabel;
     private javax.swing.JLabel tinfojLabel;
     private javax.swing.JTextField tinfojText;
     private javax.swing.JLabel titlejLabel;

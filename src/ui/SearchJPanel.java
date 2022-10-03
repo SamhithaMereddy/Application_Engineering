@@ -44,7 +44,6 @@ public class SearchJPanel extends javax.swing.JPanel {
         viewButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
         phonejText = new javax.swing.JTextField();
-        photojLabel = new javax.swing.JLabel();
         genderjText = new javax.swing.JTextField();
         namejText = new javax.swing.JTextField();
         idjText = new javax.swing.JTextField();
@@ -99,8 +98,6 @@ public class SearchJPanel extends javax.swing.JPanel {
                 deleteButtonActionPerformed(evt);
             }
         });
-
-        photojLabel.setText("Photo:");
 
         namejText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,10 +182,7 @@ public class SearchJPanel extends javax.swing.JPanel {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(72, 72, 72)
                                                 .addComponent(emailjLabel))))
-                                    .addComponent(titlejLabel)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(40, 40, 40)
-                                        .addComponent(photojLabel)))
+                                    .addComponent(titlejLabel))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(phonejText, javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,7 +208,7 @@ public class SearchJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(viewButton)
                     .addComponent(deleteButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -259,9 +253,7 @@ public class SearchJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(emailjLabel)
                     .addComponent(emailjText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(photojLabel)
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -367,7 +359,6 @@ public class SearchJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField namejText;
     private javax.swing.JLabel phonejLabel;
     private javax.swing.JTextField phonejText;
-    private javax.swing.JLabel photojLabel;
     private javax.swing.JLabel tinfojLabel;
     private javax.swing.JTextField tinfojText;
     private javax.swing.JLabel titlejLabel;
